@@ -1,0 +1,63 @@
+.projects__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	@include md-min {
+		flex-direction: row;
+	}
+}
+
+.project {
+	width: 33%;
+	border-radius: 10px;
+}
+
+.project__image {
+	border-radius: 10%;
+	opacity: 0.8;
+}
+
+.projects-in-numbers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@include md-min {
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 20px;
+	}
+}
+
+.project-in-numbers__col--left {
+	width: 100%;
+
+	@include md-min {
+		width: 50%;
+	}
+}
+
+.project-in-numbers__col--right {
+	width: 100%;
+
+	@include md-min {
+		width: 30%;
+	}
+}
+
+.project-in-numbers__tile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-in-numbers__img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}

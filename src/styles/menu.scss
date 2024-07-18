@@ -1,0 +1,35 @@
+.menu {
+	@include md-max {
+		height: 20vh;
+	}
+}
+
+.menu__inner {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.menu__col {
+	display: flex;
+}
+
+.hamburger-react {
+	background-color: $color-main;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: $color-bg;
+}
+
+.menu__col--right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu__lang {
+	padding-right: 20px;
+}

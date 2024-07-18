@@ -1,0 +1,24 @@
+.vision {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-items: center;
+
+	@include md-min {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
+.vision__image {
+	border-radius: 10%;
+}
+
+.vision__col {
+	width: 50%;
+}
+
+.vison__col--left {
+	padding-right: 20px;
+}
