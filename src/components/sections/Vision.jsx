@@ -1,7 +1,5 @@
-import visionImg1 from '../assets/images/vision-1.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-
+import visionImg1 from '../../assets/images/vision-1.jpg'
+import Button from '../small-components/Button'
 const Vision = () => {
 	return (
 		<div className='vision section'>
@@ -13,19 +11,13 @@ const Vision = () => {
 					urban skyline but also symbolize innovation and sustainable development. Our vision is to invest in top-tier
 					skyscraper projects that blend architectural elegance with functionality and energy efficiency.
 				</p>
-
-				<p className='text-button'>
-					About us{' '}
-					<button className='button-icon'>
-						<FontAwesomeIcon icon={faArrowRight} />
-					</button>
-				</p>
+				<Button text='About us' />
 			</div>
 			<div className='vision__col'>
 				<img className='vision__image' src={visionImg1} alt='scyscaper' />
 			</div>
 		</div>
 	)
-}
+} 
 
 export default Vision

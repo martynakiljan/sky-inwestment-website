@@ -45,7 +45,9 @@
 	width: 100%;
 
 	@include md-min {
-		width: 30%;
+		width: 50%;
+		display: flex;
+		gap: 10px;
 	}
 }
 
@@ -53,11 +55,22 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .project-in-numbers__img {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
+	opacity: 0.8;
+}
+
+.project-in-numbers__number {
+	font-size: 40px;
+	padding: 10px 0;
+}
+
+.project-in-numbers__description {
+	font-size: 20px;
+	text-align: center;
 }

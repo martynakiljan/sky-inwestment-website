@@ -1,6 +1,6 @@
-import projectImg4 from '../assets/images/project-4.jpg'
-import projectImg5 from '../assets/images/project-5.jpg'
-import projectImg6 from '../assets/images/project-6.jpg'
+import projectImg4 from '../../assets/images/project-1.jpg'
+import projectImg5 from '../../assets/images/project-5.jpg'
+import projectImg6 from '../../assets/images/project-6.jpg'
 
 const ProjectsInNumbers = () => {
 	return (
@@ -17,13 +17,13 @@ const ProjectsInNumbers = () => {
 				</div>
 				<div className='project-in-numbers__tile'>
 					<img className='project-in-numbers__img' src={projectImg5} alt='scyscaper' />
-					<h5 className='project-in-numbers__number'>+ 42</h5>
+					<h5 className='project-in-numbers__number'>+ 22</h5>
 					<h6 className='project-in-numbers__description'>INVESTORS</h6>
 				</div>
 				<div className='project-in-numbers__tile'>
 					<img className='project-in-numbers__img' src={projectImg6} alt='scyscaper' />
 					<h5 className='project-in-numbers__number'>+ 500</h5>
-					<h6 className='project-in-numbers__description'>TOTAL NO. OF APARTMENTS </h6>
+					<h6 className='project-in-numbers__description'>APARTMENTS </h6>
 				</div>
 			</div>
 		</div>

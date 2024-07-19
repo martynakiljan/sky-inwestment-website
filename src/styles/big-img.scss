@@ -10,3 +10,16 @@
 	border-radius: 40%; /* Initial radius */
 	transition: border-radius 0.3s ease; /* Smooth transition */
 }
+
+.big-img.in-view {
+	border-radius: 100%; /* Final radius when in view */
+}
+
+.big-img {
+	border: 5px solid red; /* Temporary border to help debug */
+}
+
+.big-img.in-view {
+	border-radius: 100%; /* Final radius when in view */
+	border: 5px solid green; /* Temporary border to help debug */
+}

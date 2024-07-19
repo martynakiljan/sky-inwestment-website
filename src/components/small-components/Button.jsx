@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-const Button = () => {
+const Button = ({ text }) => {
 	return (
 		<div className='button__container'>
-			All completed projects{' '}
+			{text}
 			<button className='button-icon'>
 				<FontAwesomeIcon icon={faArrowRight} />
 			</button>

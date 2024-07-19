@@ -33,3 +33,44 @@
 .menu__lang {
 	padding-right: 20px;
 }
+
+.menu__dropdown {
+	position: absolute; /* Change from relative to absolute */
+	left: 0;
+	right: 0;
+	height: 0; /* Start height as 0 */
+	overflow: hidden; /* Hide overflow */
+	border-top: 2px solid $color-dark;
+	background-color: $color-bg;
+	transition: height 0.3s ease-in-out; /* Add transition for height */
+	z-index: 11;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.menu__dropdown.open {
+	height: 100vh;
+	overflow: hidden;
+
+	ul {
+		margin-top: -50px;
+	}
+}
+
+.menu-item {
+	font-size: 30px;
+	display: block;
+	text-transform: uppercase;
+	padding: 20px 0;
+
+	&.active,
+	&:hover {
+		font-weight: bold;
+	}
+
+	@include md-min {
+		font-size: 35px;
+	}
+}

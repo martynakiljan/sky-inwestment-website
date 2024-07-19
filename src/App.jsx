@@ -1,23 +1,28 @@
 import './App.css'
-import Menu from './components/Menu'
-import Header from './components/Header'
-import Projects from './components/Projects'
-import Vision from './components/Vision'
-import BigImg from './components/BigImg'
-import Button from './components/Button'
-import ProjectsInNumbers from './components/ProjectsinNumbers'
+import Menu from './components/home-components/Menu'
+import Footer from './components/Footer'
+import Home from './components/sections/Home'
+import About from './components/sections/About'
+import Realizations from './components/sections/Realizations'
+import Contact from './components/sections/Contact'
+import Invest from './components/sections/Invest'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
 	return (
-		<div className='App'>
-			<Menu />
-			<Header />
-			<Projects />
-			<Vision />
-			<BigImg />
-			<Button />
-			<ProjectsInNumbers />
-		</div>
+		<Router>
+			<div className='App'>
+				<Menu />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/Realizations' element={<Realizations />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/invest' element={<Invest />} />
+				</Routes>
+				<Footer />
+			</div>
+		</Router>
 	)
 }
 
