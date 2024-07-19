@@ -1,0 +1,290 @@
+[
+	{
+		"projectName": "Burj Khalifa",
+		"year": "2010",
+		"city": "Dubai",
+		"country": "UAE",
+		"totalArea": "309,473 m²",
+		"description": "The tallest building in the world, featuring a unique and modern design."
+	},
+	{
+		"projectName": "Shanghai Tower",
+		"year": "2015",
+		"city": "Shanghai",
+		"country": "China",
+		"totalArea": "380,000 m²",
+		"description": "A supertall skyscraper known for its distinctive twisting design and sustainable architecture."
+	},
+	{
+		"projectName": "Abraj Al Bait Clock Tower",
+		"year": "2012",
+		"city": "Mecca",
+		"country": "Saudi Arabia",
+		"totalArea": "1,500,000 m²",
+		"description": "A landmark tower with an iconic clock face, serving as a central part of the Abraj Al Bait complex."
+	},
+	{
+		"projectName": "Ping An Finance Centre",
+		"year": "2017",
+		"city": "Shenzhen",
+		"country": "China",
+		"totalArea": "378,600 m²",
+		"description": "A multi-purpose skyscraper that houses offices, hotels, and a shopping mall."
+	},
+	{
+		"projectName": "Lotte World Tower",
+		"year": "2016",
+		"city": "Seoul",
+		"country": "South Korea",
+		"totalArea": "285,000 m²",
+		"description": "The tallest building in South Korea, featuring a modern design and extensive amenities."
+	},
+	{
+		"projectName": "One World Trade Center",
+		"year": "2014",
+		"city": "New York",
+		"country": "USA",
+		"totalArea": "325,279 m²",
+		"description": "The main building of the rebuilt World Trade Center complex, known for its symbolic importance."
+	},
+	{
+		"projectName": "Guangzhou CTF Finance Centre",
+		"year": "2016",
+		"city": "Guangzhou",
+		"country": "China",
+		"totalArea": "311,000 m²",
+		"description": "A striking skyscraper offering office space, a hotel, and residential units."
+	},
+	{
+		"projectName": "Tianjin CTF Finance Centre",
+		"year": "2019",
+		"city": "Tianjin",
+		"country": "China",
+		"totalArea": "310,000 m²",
+		"description": "A versatile high-rise with commercial, residential, and hotel facilities."
+	},
+	{
+		"projectName": "Chengdu CTF Finance Centre",
+		"year": "2019",
+		"city": "Chengdu",
+		"country": "China",
+		"totalArea": "300,000 m²",
+		"description": "A mixed-use skyscraper with a focus on sustainability and modern design."
+	},
+	{
+		"projectName": "Hong Kong CTF Finance Centre",
+		"year": "2018",
+		"city": "Hong Kong",
+		"country": "China",
+		"totalArea": "290,000 m²",
+		"description": "A prominent skyscraper featuring office space, a hotel, and residential apartments."
+	},
+	{
+		"projectName": "Willis Tower",
+		"year": "1973",
+		"city": "Chicago",
+		"country": "USA",
+		"totalArea": "418,000 m²",
+		"description": "One of the most iconic skyscrapers in the world, known for its former name, Sears Tower."
+	},
+	{
+		"projectName": "Abeno Harukas",
+		"year": "2014",
+		"city": "Osaka",
+		"country": "Japan",
+		"totalArea": "100,000 m²",
+		"description": "The tallest building in Japan, featuring a combination of office space, a hotel, and a department store."
+	},
+	{
+		"projectName": "Marina 101",
+		"year": "2017",
+		"city": "Dubai",
+		"country": "UAE",
+		"totalArea": "200,000 m²",
+		"description": "A towering structure with a mix of residential and hotel accommodations."
+	},
+	{
+		"projectName": "432 Park Avenue",
+		"year": "2015",
+		"city": "New York",
+		"country": "USA",
+		"totalArea": "40,000 m²",
+		"description": "A slender residential skyscraper offering luxury apartments in a prime location."
+	},
+	{
+		"projectName": "The Shard",
+		"year": "2012",
+		"city": "London",
+		"country": "UK",
+		"totalArea": "111,484 m²",
+		"description": "An iconic glass skyscraper that is the tallest building in the UK, known for its distinctive shape."
+	},
+	{
+		"projectName": "Jin Mao Tower",
+		"year": "1999",
+		"city": "Shanghai",
+		"country": "China",
+		"totalArea": "220,000 m²",
+		"description": "A prominent skyscraper that features a blend of modern design and traditional Chinese aesthetics."
+	},
+	{
+		"projectName": "CITIC Tower",
+		"year": "2018",
+		"city": "Beijing",
+		"country": "China",
+		"totalArea": "245,000 m²",
+		"description": "A modern skyscraper that serves as the headquarters for CITIC Limited."
+	},
+	{
+		"projectName": "Zifeng Tower",
+		"year": "2010",
+		"city": "Nanjing",
+		"country": "China",
+		"totalArea": "118,000 m²",
+		"description": "A landmark skyscraper known for its distinctive tapered design."
+	},
+	{
+		"projectName": "Baiyoke Tower II",
+		"year": "1997",
+		"city": "Bangkok",
+		"country": "Thailand",
+		"totalArea": "105,000 m²",
+		"description": "The tallest building in Thailand, featuring a revolving observation deck."
+	},
+	{
+		"projectName": "The Bow",
+		"year": "2012",
+		"city": "Calgary",
+		"country": "Canada",
+		"totalArea": "93,000 m²",
+		"description": "A modern skyscraper known for its unique crescent-shaped design."
+	},
+	{
+		"projectName": "Bank of China Tower",
+		"year": "1990",
+		"city": "Hong Kong",
+		"country": "China",
+		"totalArea": "100,000 m²",
+		"description": "An iconic skyscraper renowned for its unique and geometric design."
+	},
+	{
+		"projectName": "Tianjin TV Tower",
+		"year": "1991",
+		"city": "Tianjin",
+		"country": "China",
+		"totalArea": "60,000 m²",
+		"description": "A landmark tower featuring a combination of television transmission and observation functions."
+	},
+	{
+		"projectName": "Empire State Building",
+		"year": "1931",
+		"city": "New York",
+		"country": "USA",
+		"totalArea": "254,000 m²",
+		"description": "One of the most famous skyscrapers globally, symbolizing American industrialization."
+	},
+	{
+		"projectName": "Hysan Place",
+		"year": "2012",
+		"city": "Hong Kong",
+		"country": "China",
+		"totalArea": "55,000 m²",
+		"description": "A mixed-use skyscraper with retail and office space in a prime location."
+	},
+	{
+		"projectName": "Marina Bay Sands",
+		"year": "2010",
+		"city": "Singapore",
+		"country": "Singapore",
+		"totalArea": "200,000 m²",
+		"description": "A striking integrated resort with a unique design featuring three towers and a rooftop park."
+	},
+	{
+		"projectName": "Taipei 101",
+		"year": "2004",
+		"city": "Taipei",
+		"country": "Taiwan",
+		"totalArea": "206,000 m²",
+		"description": "Once the tallest building in the world, known for its innovative engineering and design."
+	},
+	{
+		"projectName": "Dongfang Plaza",
+		"year": "2008",
+		"city": "Shanghai",
+		"country": "China",
+		"totalArea": "90,000 m²",
+		"description": "A significant office building with modern amenities and a distinctive architectural style."
+	},
+	{
+		"projectName": "Almas Tower",
+		"year": "2009",
+		"city": "Dubai",
+		"country": "UAE",
+		"totalArea": "120,000 m²",
+		"description": "An office skyscraper known for its unique diamond-shaped design and prime location."
+	},
+	{
+		"projectName": "Eureka Tower",
+		"year": "2006",
+		"city": "Melbourne",
+		"country": "Australia",
+		"totalArea": "84,000 m²",
+		"description": "A residential skyscraper featuring luxurious apartments and an observation deck."
+	},
+	{
+		"projectName": "Q1 Tower",
+		"year": "2005",
+		"city": "Gold Coast",
+		"country": "Australia",
+		"totalArea": "74,000 m²",
+		"description": "The tallest residential building in the world, offering panoramic views of the Gold Coast."
+	},
+	{
+		"projectName": "Liberty Place",
+		"year": "1989",
+		"city": "Sydney",
+		"country": "Australia",
+		"totalArea": "100,000 m²",
+		"description": "A prominent office building with a distinctive triangular shape."
+	},
+	{
+		"projectName": "Sky Tower",
+		"year": "1997",
+		"city": "Auckland",
+		"country": "New Zealand",
+		"totalArea": "25,000 m²",
+		"description": "A landmark tower offering panoramic views of Auckland and various entertainment options."
+	},
+	{
+		"projectName": "Aon Center",
+		"year": "1973",
+		"city": "Chicago",
+		"country": "USA",
+		"totalArea": "89,000 m²",
+		"description": "A notable skyscraper known for its sleek, minimalist design and distinctive white marble facade."
+	},
+	{
+		"projectName": "Petronas Towers",
+		"year": "1998",
+		"city": "Kuala Lumpur",
+		"country": "Malaysia",
+		"totalArea": "234,000 m²",
+		"description": "Once the tallest buildings in the world, renowned for their striking twin-tower design."
+	},
+	{
+		"projectName": "Palms Casino Resort",
+		"year": "2001",
+		"city": "Las Vegas",
+		"country": "USA",
+		"totalArea": "77,000 m²",
+		"description": "A landmark resort known for its luxurious accommodations and vibrant design."
+	},
+	{
+		"projectName": "Sears Tower",
+		"year": "1973",
+		"city": "Chicago",
+		"country": "USA",
+		"totalArea": "418,000 m²",
+		"description": "The former name of Willis Tower, a global icon of American skyscraper engineering."
+	}
+]
