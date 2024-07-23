@@ -18,6 +18,6 @@ const Vision = () => {
 			</div>
 		</div>
 	)
-} 
+}
 
 export default Vision

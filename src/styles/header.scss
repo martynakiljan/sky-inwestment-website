@@ -4,21 +4,22 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-
-	@include md-min {
-		height: 100vh;
-	}
 }
 
 .header__title {
 	text-align: center;
 	font-size: 40px;
+	transition: opacity 1s ease-out, transform 1s ease-out;
 
 	@include md-min {
 		font-size: 60px;
 	}
 }
 
+.slide-in {
+	opacity: 1;
+	transform: translateX(0);
+}
 .header__text {
 	padding-top: 40px;
 	text-align: center;

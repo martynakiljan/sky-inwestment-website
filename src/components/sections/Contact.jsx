@@ -1,4 +1,6 @@
 import { useForm } from 'react-hook-form'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
 	const {
@@ -15,7 +17,7 @@ const Contact = () => {
 	return (
 		<div className='contact-container'>
 			<div className='contact-form'>
-				<h2>Contact Us</h2>
+				<h2 className='title'>Contact Us</h2>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<div className='form-group'>
 						<label htmlFor='name'>Name</label>
@@ -37,13 +39,24 @@ const Contact = () => {
 				</form>
 			</div>
 			<div className='contact-info'>
-				<h2>Get in Touch</h2>
+				<h2 className='title'>Get in Touch</h2>
 				<p>
 					<strong>Phone:</strong> +1 (555) 123-4567
 				</p>
 				<p>
 					<strong>Address:</strong> 123 Skyscraper Lane, Suite 400, Metropolis, NY 10001
 				</p>
+				<div className='social social-contact'>
+					<a className='social__icon' href='https://www.google.com'>
+						<FontAwesomeIcon icon={faInstagram} />
+					</a>
+					<a className='social__icon' href='https://www.google.com'>
+						<FontAwesomeIcon icon={faFacebook} />
+					</a>
+					<a className='social__icon' href='https://www.google.com'>
+						<FontAwesomeIcon icon={faLinkedin} />
+					</a>
+				</div>
 			</div>
 		</div>
 	)

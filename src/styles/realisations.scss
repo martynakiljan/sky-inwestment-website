@@ -1,0 +1,16 @@
+.table-realization {
+	@include md-max {
+		overflow-x: scroll;
+		max-width: 300px;
+	}
+}
+
+.table-realization__header {
+	text-align: left;
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+
+.table-realization__cell {
+	padding-right: 10px;
+}

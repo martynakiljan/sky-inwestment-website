@@ -1,9 +1,10 @@
 import Header from '../home-components/Header'
 import Projects from '../home-components/Projects'
 import Vision from './Vision'
-import BigImg from '../home-components/BigImg'
+import RoundedImage from '../home-components/RoundedImage'
 import Button from '../small-components/Button'
 import ProjectsInNumbers from '../home-components/ProjectsinNumbers'
+import image from '../../assets/images/invest-1.jpg'
 
 const Home = () => {
 	return (
@@ -11,8 +12,8 @@ const Home = () => {
 			<Header />
 			<Projects />
 			<Vision />
-			<BigImg />
-			<Button text="all projects"/>
+			<RoundedImage src={image} />
+			<Button text='all projects' />
 			<ProjectsInNumbers />
 		</>
 	)

@@ -9,13 +9,15 @@
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0;
+	margin: 20px 0;
 }
 
 .menu__col {
 	display: flex;
 }
-
+nav {
+	height: 100%;
+}
 .hamburger-react {
 	background-color: $color-main;
 	width: 30px;
@@ -40,7 +42,7 @@
 	right: 0;
 	height: 0; /* Start height as 0 */
 	overflow: hidden; /* Hide overflow */
-	border-top: 2px solid $color-dark;
+
 	background-color: $color-bg;
 	transition: height 0.3s ease-in-out; /* Add transition for height */
 	z-index: 11;
@@ -48,22 +50,22 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+
+	&.open {
+		border-top: 2px solid $color-dark;
+	}
 }
 
 .menu__dropdown.open {
 	height: 100vh;
 	overflow: hidden;
-
-	ul {
-		margin-top: -50px;
-	}
 }
 
 .menu-item {
 	font-size: 30px;
 	display: block;
 	text-transform: uppercase;
-	padding: 20px 0;
+	padding: 15px 0;
 
 	&.active,
 	&:hover {

@@ -4,13 +4,16 @@
 	padding: 20px;
 }
 
+.about__columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
 .about-column {
 	flex: 1;
 	margin: 0 10px;
 	padding: 20px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-column h2 {
@@ -26,37 +29,39 @@
 	flex-basis: 100%;
 	padding: 20px;
 	margin-top: 20px;
-	border-left: 4px solid #007bff;
 	font-style: italic;
-	background-color: #f9f9f9;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-size: 35px;
+	text-align: center;
 }
 
-.about-quote p {
-	margin: 0;
-}
-
-.about-quote footer {
-	text-align: right;
-	font-size: 0.9em;
-	color: #555;
+.about__author {
+	font-size: 20px;
+	margin-top: 10px;
 }
 
 .team-section {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
+	background-color: $color-dark;
+}
+
+.team-title {
+	font-size: 30px;
+	padding-bottom: 30px;
 }
 
 .team-text,
 .team-image {
 	flex: 1;
-	padding: 20px;
-	box-sizing: border-box;
+	color: $color-bg;
 }
 
 .team-text {
-	margin-right: 10px; /* Space between text and image */
+	margin-right: 10px;
+	color: $color-bg; /* Space between text and image */
+	padding: 10px;
+	text-align: center;
 }
 
 .team-image img {
@@ -64,4 +69,8 @@
 	height: auto;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-description {
+	font-size: 18px;
 }

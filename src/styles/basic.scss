@@ -21,7 +21,7 @@ html {
 	overflow-x: hidden;
 
 	@include md-min {
-		margin: 30px auto;
+		margin: 0 auto;
 		max-width: 1400px;
 	}
 
@@ -145,19 +145,27 @@ button {
 }
 
 .section {
-	margin-bottom: 100px;
-
-	@include md-min {
-		margin-bottom: 200px;
-	}
+	margin: 100px 0;
 }
 
 .title {
 	font-size: 30px;
-	padding-bottom: 20px;
 	font-weight: lighter;
-	margin: 0 auto;
+	margin: 50px auto;
 	color: $color-dark;
+
+	&.center {
+		text-align: center;
+		width: 100%;
+		margin: 50px 0;
+	}
+
+	&.tight {
+		@include md-min {
+			width: 70%;
+			margin: 50px auto;
+		}
+	}
 }
 
 a {

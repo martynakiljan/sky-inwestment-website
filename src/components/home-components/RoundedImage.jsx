@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
-const BigImg = () => {
+const RoundedImage = ({ src }) => {
 	const [isInView, setIsInView] = useState(false)
 	const imgRef = useRef(null)
 
@@ -24,11 +24,7 @@ const BigImg = () => {
 		}
 	}, [])
 
-	return (
-		<div ref={imgRef} className={`big-img ${isInView ? 'in-view' : ''}`}>
-			<div className='big-img_image'></div>
-		</div>
-	)
+	return <img src={src} ref={imgRef} className={`rounded-image ${isInView ? 'in-view' : ''}`}></img>
 }
 
-export default BigImg
+export default RoundedImage
