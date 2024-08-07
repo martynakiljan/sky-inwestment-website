@@ -11,7 +11,9 @@ const Footer = () => {
 				<div className='footer__col'>
 					<p className='footer__title'>Contact</p>
 					<p className='footer__tel'>+41 234 344 456</p>
-					<p className='footer__email'>prosper@invest.com</p>
+					<a className='footer__email' href='mailto:prosper@invest.com'>
+						prosper@invest.com
+					</a>
 				</div>
 				<div className='footer__col'>
 					<p className='footer__title'>Location</p>

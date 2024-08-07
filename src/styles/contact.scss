@@ -66,7 +66,10 @@ button:hover {
 	background-color: $color-bg;
 	color: $color-dark;
 	border-radius: 5px;
-	border: 1px solid $color-dark;
+
+	.form & {
+		border: 1px solid $color-dark;
+	}
 }
 
 .contact-info h2 {
@@ -80,4 +83,12 @@ button:hover {
 .social-contact {
 	width: 30%;
 	margin-top: 30px;
+}
+
+.social__icon {
+	&:hover {
+		svg {
+			color: $color-dark-2;
+		}
+	}
 }

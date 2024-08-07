@@ -177,7 +177,6 @@ const Menu = () => {
 					</NavLink>
 				</div>
 				<div className='menu__col menu__col--right'>
-					<div className='menu__lang'>EN</div>
 					<Hamburger toggled={isOpen} toggle={setOpen} />
 				</div>
 			</div>
