@@ -12,6 +12,10 @@ const Header = () => {
 		return () => clearInterval(interval)
 	}, [])
 
+	const handleScrollDown = () => {
+		window.scrollBy({ top: 500, behavior: 'smooth' })
+	}
+
 	return (
 		<div className='header'>
 			<div className='header__inner'>
@@ -29,7 +33,7 @@ const Header = () => {
 					every stage. With our extensive experience and cutting-edge strategies, we drive value and growth in every
 					investment opportunity.
 				</p>
-				<div className='arrows__container'>
+				<div className='arrows__container' onClick={handleScrollDown}>
 					<div id='app'>
 						<div className='arrow arrowSliding delay1'></div>
 						<div className='arrow arrowSliding delay2'></div>
