@@ -1,3 +1,9 @@
+.header {
+	@include lg-min {
+		margin-top: 70px;
+	}
+}
+
 .header__inner {
 	display: flex;
 	flex-direction: column;

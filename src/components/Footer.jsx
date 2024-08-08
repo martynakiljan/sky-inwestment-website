@@ -23,13 +23,13 @@ const Footer = () => {
 				<div className='footer__col'>
 					<p className='footer__title'>Social Media</p>
 					<div className='social'>
-						<a className='social__icon' href='https://www.google.com'>
+						<a className='social__icon' href='https://www.instagram.com/'>
 							<FontAwesomeIcon icon={faInstagram} />
 						</a>
-						<a className='social__icon' href='https://www.google.com'>
+						<a className='social__icon' href='https://www.facebook.com/'>
 							<FontAwesomeIcon icon={faFacebook} />
 						</a>
-						<a className='social__icon' href='https://www.google.com'>
+						<a className='social__icon' href='https://www.linkedin.com/'>
 							<FontAwesomeIcon icon={faLinkedin} />
 						</a>
 					</div>

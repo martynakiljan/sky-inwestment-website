@@ -3,10 +3,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: 20px;
 
 	@include md-min {
 		flex-direction: row;
-		padding: 20px;
+		gap: 50px;
 	}
 }
 
@@ -24,7 +25,6 @@ form {
 
 	@include md-min {
 		margin: 0 10px;
-		padding: 20px;
 	}
 }
 

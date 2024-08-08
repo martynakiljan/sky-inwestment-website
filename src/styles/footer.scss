@@ -5,7 +5,11 @@
 	margin-top: 50px;
 
 	@include md-min {
-		padding: 50px 0;
+		padding-top: 50px;
+	}
+
+	svg {
+		width: 200px;
 	}
 }
 
@@ -58,7 +62,8 @@
 	text-align: center;
 
 	@include md-min {
-		padding: 50px 0;
+		padding-top: 50px;
+		padding-bottom: 20px;
 	}
 }
 
