@@ -14,7 +14,6 @@ html {
 
 .App {
 	position: relative;
-	width: 90%;
 	margin: 20px auto;
 	padding: 0 20px;
 	line-height: 1.5;
@@ -23,6 +22,7 @@ html {
 	@include md-min {
 		margin: 0 auto;
 		max-width: 1400px;
+		width: 90%;
 	}
 
 	@include md-max {
@@ -145,13 +145,17 @@ button {
 }
 
 .section {
-	margin: 100px 0;
+	margin: 50px 0;
+
+	@include md-min {
+		margin: 100px 0;
+	}
 }
 
 .title {
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: lighter;
-	margin: 50px auto;
+	margin: 25px auto;
 	color: $color-dark;
 
 	&.center {
@@ -166,6 +170,10 @@ button {
 			margin: 50px auto;
 		}
 	}
+
+	@include md-min {
+		font-size: 30px;
+	}
 }
 
 a {
@@ -173,9 +181,13 @@ a {
 }
 
 .subtitle {
-	font-size: 35px;
+	font-size: 18px;
 	color: $color-dark-2;
 	padding-bottom: 20px;
+
+	@include md-min {
+		font-size: 35px;
+	}
 }
 
 .loading-spinner {
@@ -205,9 +217,9 @@ a {
 }
 
 .button__container {
-	margin: 100px 0;
+	margin: 25px 0;
 	padding: 10px 0;
-	font-size: 30px;
+	font-size: 18px;
 	background-color: transparent;
 	border: none;
 	display: flex;
@@ -216,9 +228,13 @@ a {
 	position: relative;
 
 	svg {
-		font-size: 20px;
+		font-size: 15px;
 		color: $color-dark;
 		padding-left: 10px;
+
+		@include md-min {
+			font-size: 20px;
+		}
 	}
 
 	&::after {
@@ -238,5 +254,10 @@ a {
 	&:hover::after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
+	}
+
+	@include md-min {
+		margin: 100px 0;
+		font-size: 30px;
 	}
 }

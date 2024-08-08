@@ -16,7 +16,11 @@
 }
 
 .vision__col {
-	width: 50%;
+	width: 100%;
+
+	@include md-min {
+		width: 50%;
+	}
 }
 
 .vison__col--left {

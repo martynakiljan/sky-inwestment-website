@@ -1,7 +1,10 @@
 .table-realization {
 	@include md-max {
 		overflow-x: scroll;
-		max-width: 300px;
+	}
+
+	@media only screen and (max-width: 430px) {
+		max-width: 430px;
 	}
 }
 

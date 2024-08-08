@@ -1,7 +1,12 @@
 .footer {
 	border-top: 3px solid $color-dark;
-	padding: 50px 0;
+	padding: 25px 0;
+	padding-bottom: 0;
 	margin-top: 50px;
+
+	@include md-min {
+		padding: 50px 0;
+	}
 }
 
 .footer__inner {
@@ -26,15 +31,35 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
+
+	@include md-max {
+		padding: 15px 0;
+	}
+
+	svg {
+		@include md-max {
+			width: 200px;
+		}
+	}
 }
 
 .footer__title {
 	font-size: 25px;
 	padding-bottom: 10px;
+
+	@include md-max {
+		font-size: 20px;
+	}
 }
 
 .footer__bottom--copy {
-	padding: 50px 0;
+	padding: 10px 0;
+	margin-top: 30px;
+	text-align: center;
+
+	@include md-min {
+		padding: 50px 0;
+	}
 }
 
 .social {
@@ -46,5 +71,10 @@
 	svg {
 		width: 30px;
 		height: 30px;
+
+		@include md-max {
+			width: 20px;
+			height: 20px;
+		}
 	}
 }

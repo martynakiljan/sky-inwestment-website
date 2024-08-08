@@ -9,14 +9,27 @@
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	margin: 20px 0;
+
+	@include md-min {
+		margin: 20px 0;
+	}
+}
+
+.logo {
+	@include md-max {
+		max-width: 200px;
+	}
 }
 
 .menu__col {
 	display: flex;
 }
 nav {
-	height: 100%;
+	height: 70%;
+
+	@include md-min {
+		height: 100%;
+	}
 }
 .hamburger-react {
 	background-color: $color-main;
@@ -62,7 +75,7 @@ nav {
 }
 
 .menu-item {
-	font-size: 30px;
+	font-size: 20px;
 	display: block;
 	text-transform: uppercase;
 	padding: 15px 0;

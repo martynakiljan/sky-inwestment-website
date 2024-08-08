@@ -1,20 +1,39 @@
 .contact-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	padding: 20px;
-	flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+	flex-wrap: wrap;
+
+	@include md-min {
+		flex-direction: row;
+		padding: 20px;
+	}
+}
+
+form {
+	@include md-max {
+		padding: 50px 0;
+	}
 }
 
 .contact-form,
 .contact-info {
 	flex: 1;
-	margin: 0 10px;
-	padding: 20px;
+
 	box-sizing: border-box;
+
+	@include md-min {
+		margin: 0 10px;
+		padding: 20px;
+	}
 }
 
 .contact-form {
-	max-width: 600px; /* Limits the width of the form */
+	width: 100%;
+
+	@include md-min {
+		max-width: 600px;
+	}
 }
 
 .contact-form h2 {
@@ -46,6 +65,10 @@
 .form-group textarea {
 	height: 150px;
 	resize: vertical; /* Allows vertical resizing */
+
+	@include md-max {
+		height: 100px;
+	}
 }
 
 .error-message {

@@ -1,19 +1,30 @@
 .about-container {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 0;
+
+	@include md-min {
+		padding: 20px;
+	}
 }
 
 .about__columns {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: flex-start;
+
+	@include md-min {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
 }
 
 .about-column {
-	flex: 1;
-	margin: 0 10px;
-	padding: 20px;
+	@include md-min {
+		flex: 1;
+		margin: 0 10px;
+		padding: 20px;
+	}
 }
 
 .about-column h2 {
@@ -41,9 +52,14 @@
 
 .team-section {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	margin-top: 20px;
 	background-color: $color-dark;
+
+	@include md-min {
+		flex-direction: row;
+	}
 }
 
 .team-title {
@@ -58,10 +74,13 @@
 }
 
 .team-text {
-	margin-right: 10px;
-	color: $color-bg; /* Space between text and image */
-	padding: 10px;
+	padding: 20px;
+	color: $color-bg;
 	text-align: center;
+
+	@include md-min {
+		margin-right: 10px;
+	}
 }
 
 .team-image img {

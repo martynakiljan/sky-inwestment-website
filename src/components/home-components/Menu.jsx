@@ -27,6 +27,7 @@ const Menu = () => {
 				<div className='menu__col'>
 					<NavLink to='/' className='menu-item'>
 						<svg
+							className='logo'
 							xmlns='http://www.w3.org/2000/svg'
 							xmlns:xlink='http://www.w3.org/1999/xlink'
 							width='315'
@@ -177,7 +178,7 @@ const Menu = () => {
 					</NavLink>
 				</div>
 				<div className='menu__col menu__col--right'>
-					<Hamburger toggled={isOpen} toggle={setOpen} />
+					<Hamburger toggled={isOpen} toggle={setOpen} size={20} />
 				</div>
 			</div>
 			<div className={`menu__dropdown ${isOpen ? 'open' : ''}`}>
