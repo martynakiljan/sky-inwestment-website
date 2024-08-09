@@ -54,12 +54,14 @@ form {
 
 .form-group input,
 .form-group textarea {
+	font-family: 'Playfair Display', serif;
 	width: 100%;
-	padding: 10px;
+	padding: 10px 0;
 	box-sizing: border-box;
 	border: none;
 	background-color: $color-bg;
 	border-bottom: 1px solid $color-dark;
+	color: #8b8b8b;
 }
 
 .form-group textarea {
@@ -72,8 +74,9 @@ form {
 }
 
 .error-message {
-	color: red;
-	font-size: 0.875em;
+	color: #bd6262;
+	font-size: 0.6rem;
+	padding-top: 5px;
 }
 
 button {

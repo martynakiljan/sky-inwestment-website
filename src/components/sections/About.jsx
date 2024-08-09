@@ -1,4 +1,6 @@
 import teamImg from '../../assets/images/team.jpg'
+import RoundedImage from '../home-components/RoundedImage'
+import img from '../../assets/images/project-8.jpg'
 
 const About = () => {
 	return (
@@ -30,6 +32,7 @@ const About = () => {
 					</p>
 				</div>
 			</div>
+			<RoundedImage src={img} />
 			<blockquote className='about-quote'>
 				<p>
 					"Building the future starts with a vision. Our goal is to transform that vision into landmarks of excellence."

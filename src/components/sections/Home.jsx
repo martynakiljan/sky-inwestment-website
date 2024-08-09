@@ -5,6 +5,7 @@ import RoundedImage from '../home-components/RoundedImage'
 import Button from '../small-components/Button'
 import ProjectsInNumbers from '../home-components/ProjectsinNumbers'
 import image from '../../assets/images/invest-1.jpg'
+import image2 from '../../assets/images/invest-4.jpg'
 
 const Home = () => {
 	return (
@@ -15,6 +16,7 @@ const Home = () => {
 			<RoundedImage src={image} />
 			<Button text='all projects' />
 			<ProjectsInNumbers />
+			<RoundedImage src={image2} />
 		</>
 	)
 }
