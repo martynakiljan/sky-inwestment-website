@@ -189,7 +189,7 @@ const Menu = () => {
 						</li>
 						<li>
 							<NavLink to='/about' onClick={handleLinkClick} className='menu-item'>
-								About
+								About us
 							</NavLink>
 						</li>
 						<li>
@@ -198,13 +198,13 @@ const Menu = () => {
 							</NavLink>
 						</li>
 						<li>
+							<li>
+								<NavLink to='/invest' onClick={handleLinkClick} className='menu-item'>
+									Invest in us
+								</NavLink>
+							</li>
 							<NavLink to='/contact' onClick={handleLinkClick} className='menu-item'>
 								Contact
-							</NavLink>
-						</li>
-						<li>
-							<NavLink to='/invest' onClick={handleLinkClick} className='menu-item'>
-								Invest
 							</NavLink>
 						</li>
 					</ul>
