@@ -1,6 +1,6 @@
 .menu {
 	@include md-max {
-		height: 15vh;
+		height: 10vh;
 	}
 }
 
@@ -37,6 +37,7 @@ nav {
 	height: 30px;
 	border-radius: 50%;
 	color: $color-bg;
+	margin-top: -10px;
 }
 
 .menu__col--right {
