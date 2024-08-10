@@ -1,5 +1,7 @@
 import visionImg1 from '../../assets/images/vision-1.jpg'
-import Button from '../small-components/Button'
+import Button from './Button'
+import { NavLink } from 'react-router-dom'
+
 const Vision = () => {
 	return (
 		<div className='vision section'>
@@ -11,7 +13,9 @@ const Vision = () => {
 					urban skyline but also symbolize innovation and sustainable development. Our vision is to invest in top-tier
 					skyscraper projects that blend architectural elegance with functionality and energy efficiency.
 				</p>
-				<Button text='About us' />
+				<NavLink to='/about' className='menu-item'>
+					<Button text='About us' />
+				</NavLink>
 			</div>
 			<div className='vision__col'>
 				<img className='vision__image' src={visionImg1} alt='scyscaper' />

@@ -7,10 +7,12 @@ import Realizations from './components/sections/Realizations'
 import Contact from './components/sections/Contact'
 import Invest from './components/sections/Invest'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 	return (
 		<Router>
+			<ScrollToTop />
 			<div className='App'>
 				<Menu />
 				<Routes>
