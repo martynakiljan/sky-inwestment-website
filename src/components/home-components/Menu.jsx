@@ -5,12 +5,10 @@ import { Slant as Hamburger } from 'hamburger-react'
 const Menu = () => {
 	const [isOpen, setOpen] = useState(false)
 
-	// Close the menu when clicking a menu item
 	const handleLinkClick = () => {
 		setOpen(false)
 	}
 
-	// Close the menu on scroll
 	useEffect(() => {
 		const handleScroll = () => {
 			if (isOpen) {

@@ -1,0 +1,27 @@
+.loading-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.loading-screen__logo {
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	animation: blink 1s infinite;
+}
+
+.loading-screen__logo-wrapper {
+	margin-right: -35px;
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
