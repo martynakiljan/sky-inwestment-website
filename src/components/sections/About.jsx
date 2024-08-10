@@ -41,7 +41,7 @@ const About = () => {
 			</blockquote>
 			<div className='team-section'>
 				<div className='team-text'>
-					<h2 className='team-title'>Our Team</h2>
+					<h2 className='team-title title'>Our Team</h2>
 					<p className='team-description'>
 						Our team is composed of highly skilled professionals with a passion for architecture and engineering. We
 						work together to bring innovative ideas to life, ensuring the success of each project through collaboration

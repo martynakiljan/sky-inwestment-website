@@ -180,6 +180,11 @@ button {
 			margin: 45px auto;
 		}
 	}
+
+	&.team-title {
+		color: $color-bg;
+		margin: 0;
+	}
 }
 
 a {
