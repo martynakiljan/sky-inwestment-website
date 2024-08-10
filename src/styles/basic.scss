@@ -138,6 +138,7 @@ img {
 button {
 	cursor: pointer;
 	font-size: 12px;
+	font-weight: normal;
 
 	@include md-min {
 		font-size: 16px;
