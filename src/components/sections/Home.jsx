@@ -6,7 +6,6 @@ import Button from './Button'
 import ProjectsInNumbers from '../home-components/ProjectsinNumbers'
 import image from '../../assets/images/invest-1.jpg'
 import image2 from '../../assets/images/invest-4.jpg'
-import { NavLink } from 'react-router-dom'
 
 const Home = () => {
 	return (
@@ -15,9 +14,6 @@ const Home = () => {
 			<Projects />
 			<Vision />
 			<RoundedImage src={image} />
-			<NavLink to='/realisations' className='menu-item'>
-				<Button text='all projects' />
-			</NavLink>
 			<ProjectsInNumbers />
 			<RoundedImage src={image2} />
 		</>

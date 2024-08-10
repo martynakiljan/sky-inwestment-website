@@ -3,9 +3,9 @@ import projectImg5 from '../../assets/images/project-5.jpg'
 import projectImg6 from '../../assets/images/project-6.jpg'
 import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
-
+import { NavLink } from 'react-router-dom'
+import Button from '../sections/Button'
 const ProjectsInNumbers = () => {
-	// Set up the intersection observer
 	const { ref: refInvestments, inView: inViewInvestments } = useInView({ triggerOnce: true })
 	const { ref: refInvestors, inView: inViewInvestors } = useInView({ triggerOnce: true })
 	const { ref: refApartments, inView: inViewApartments } = useInView({ triggerOnce: true })
@@ -15,6 +15,9 @@ const ProjectsInNumbers = () => {
 			<div className='project-in-numbers__col project-in-numbers__col--left'>
 				<h2 className='title'>Our Projects in Numbers</h2>
 				<h3 className='subtitle'>Together we can create a secure future and unlock new opportunities for growth.</h3>
+				<NavLink to='/realisations' className='menu-item'>
+					<Button text='all projects' />
+				</NavLink>
 			</div>
 			<div className='project-in-numbers__col  project-in-numbers__col--right'>
 				<div className='project-in-numbers__tile' ref={refInvestments}>

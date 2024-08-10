@@ -3,7 +3,8 @@ import { useForm } from 'react-hook-form'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import ClipLoader from 'react-spinners/ClipLoader'
-
+import RoundedImage from '../home-components/RoundedImage'
+import img from '../../assets/images/project-9.jpg'
 const Contact = () => {
 	const {
 		register,
@@ -82,6 +83,7 @@ const Contact = () => {
 					</a>
 				</div>
 			</div>
+			<RoundedImage src={img} />
 		</div>
 	)
 }
