@@ -1,4 +1,4 @@
-import data from '../../helpers/data.json'
+import data from '../../data/data.json'
 
 const Realizations = () => {
 	return (
