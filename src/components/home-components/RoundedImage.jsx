@@ -3,46 +3,41 @@ import { useEffect, useState, useRef } from 'react'
 const RoundedImage = ({ src }) => {
 	const [isInView, setIsInView] = useState(false)
 	const imgRef = useRef(null)
-	const timeoutRef = useRef(null)
 
 	useEffect(() => {
-		const node = imgRef.current
-		if (!node) return
+		const handleResize = () => {
+			if (window.innerWidth > 1024) {
+				const node = imgRef.current
+				if (!node) return
 
-		const handleIntersection = ([entry]) => {
-			if (timeoutRef.current) {
-				clearTimeout(timeoutRef.current)
+				const observer = new IntersectionObserver(
+					([entry]) => {
+						requestAnimationFrame(() => {
+							setIsInView(entry.isIntersecting)
+						})
+					},
+					{ threshold: 0.1 }
+				)
+
+				observer.observe(node)
+
+				return () => {
+					observer.unobserve(node)
+				}
+			} else {
+				setIsInView(true)
 			}
-			timeoutRef.current = setTimeout(() => {
-				requestAnimationFrame(() => {
-					setIsInView(entry.isIntersecting)
-				})
-			}, 100) // Opóźnienie 100 ms
 		}
 
-		const observer = new IntersectionObserver(handleIntersection, {
-			threshold: 0.5, // Możesz dostosować wartość threshold
-		})
-
-		observer.observe(node)
+		handleResize()
+		window.addEventListener('resize', handleResize)
 
 		return () => {
-			if (timeoutRef.current) {
-				clearTimeout(timeoutRef.current)
-			}
-			observer.unobserve(node)
+			window.removeEventListener('resize', handleResize)
 		}
 	}, [])
 
-	return (
-		<img
-			src={src}
-			ref={imgRef}
-			loading='lazy'
-			className={`rounded-image ${isInView ? 'in-view' : ''}`}
-			style={{ transition: 'transform 0.3s ease-in-out' }} // Styl animacji
-		/>
-	)
+	return <img src={src} ref={imgRef} className={`rounded-image ${isInView ? 'in-view' : ''}`}></img>
 }
 
 export default RoundedImage
