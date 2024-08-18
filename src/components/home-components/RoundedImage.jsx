@@ -8,14 +8,15 @@ const RoundedImage = ({ src }) => {
 		const node = imgRef.current
 		if (!node) return
 
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				requestAnimationFrame(() => {
-					setIsInView(entry.isIntersecting)
-				})
-			},
-			{ threshold: 0.1 }
-		)
+		const handleIntersection = ([entry]) => {
+			requestAnimationFrame(() => {
+				setIsInView(entry.isIntersecting)
+			})
+		}
+
+		const observer = new IntersectionObserver(handleIntersection, {
+			threshold: 0.5, // Zwiększ threshold, aby poprawić dokładność wykrywania
+		})
 
 		observer.observe(node)
 
@@ -24,7 +25,14 @@ const RoundedImage = ({ src }) => {
 		}
 	}, [])
 
-	return <img src={src} ref={imgRef} className={`rounded-image ${isInView ? 'in-view' : ''}`}></img>
+	return (
+		<img
+			src={src}
+			ref={imgRef}
+			className={`rounded-image ${isInView ? 'in-view' : ''}`}
+			style={{ transition: 'transform 0.3s ease-in-out' }} // Dodanie stylów CSS do płynniejszej animacji
+		/>
+	)
 }
 
 export default RoundedImage
